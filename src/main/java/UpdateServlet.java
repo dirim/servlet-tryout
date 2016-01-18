@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by dirim on 1/10/2016.
@@ -34,7 +35,7 @@ public class UpdateServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 
-        ArrayList<User> users = UserService.getInstance().getUsers();
+        List<User> users = UserService.getInstance().getUsers();
         String userId = req.getParameter("id");
         int index = users.indexOf(UserService.getInstance().getUser(userId));
 

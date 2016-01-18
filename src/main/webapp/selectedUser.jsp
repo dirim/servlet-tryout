@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<form method="post" action="/users/*">
+<form method="post" action="/users/">
     <input type="hidden" name="id" value="${user.getID()}"/>
     name: <input type="text" name="name" value="${user.getName()}" /><br>
     username: <input type="text" name="username" value="${user.getUsername()}" /><br>

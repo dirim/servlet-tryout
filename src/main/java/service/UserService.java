@@ -1,16 +1,18 @@
 package service;
 
 import model.User;
+
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by dirim on 12/23/2015.
  */
 public class UserService {
-    private ArrayList<User> users;
+    private List<User> users;
     private static UserService instance = null;
 
-    protected UserService(){
+    private UserService(){
         this.users = new ArrayList<>();
     }
 
@@ -25,7 +27,7 @@ public class UserService {
         users.add(user);
     }
 
-    public ArrayList<User> getUsers() {
+    public List<User> getUsers() {
         return users;
     }
 
